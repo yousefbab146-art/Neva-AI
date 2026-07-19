@@ -103,7 +103,7 @@ async function sendLog(client, type, data) {
 // ============================================================
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const geminiModel = genAI.getGenerativeModel({
-    model: 'gemini-1.5-flash',
+    model: 'gemini-2.0-flash',
     systemInstruction: `Sen "Neva" adında, Neva Development Discord sunucusunun yapay zeka asistanısın.
 Her türlü konuda yardımcı olursun. Hiçbir konu seni kısıtlamaz, her soruya cevap verirsin.
 Cevaplarını Türkçe ver. Kod sorusunda markdown ve kod blokları kullan, normal sorularda ise sade ve anlaşılır yaz.
